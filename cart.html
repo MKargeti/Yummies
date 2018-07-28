@@ -7,13 +7,17 @@
     <meta name="description" content="Best foo delivery website in town, just order your yummy food in few clicks." />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
     <link href="css/carousel.css" rel="stylesheet" />
-    <title>Home | Tasty food service</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <title>Checkout | Tasty food service</title>
 <link href="./css/style.css" rel="stylesheet"></head>
 
 <body class="container">
     <header class="header">
         <a href="/" class="header__link">
-            <img src="/img/Logo.png" alt="Yummiz Logo" class="header__logo">
+            <img src="img/logo.png" alt="Yummiz Logo" class="header__logo">
         </a>
         <form class="search" autocomplete="off">
             <input type="text" class="search__input" placeholder="Search Your Items..." autocomplete="off" name="search" aria-label="Search Your Items" value="">
@@ -27,7 +31,7 @@
         <nav class="header-nav">
             <ul class="header-menu">
                 <li class="header-menu__item">
-                    <a href="#" class="header-menu__link">Home</a>
+                    <a href="index.html" class="header-menu__link">Home</a>
                 </li>
                 <li class="header-menu__item">
                     <a href="#" class="header-menu__link">Services</a>
@@ -82,7 +86,7 @@
 
         <nav id="mobile-nav" class="sidebar">
             <div class="mobile-nav__logocontainer">
-                <img src="/img/Logo.png" alt="Yummiz Logo" class="header__logo">
+                <img src="img/logo.png" alt="Yummiz Logo" class="header__logo">
                 <span class="mobile-nav__logocontainer--heading">Yummies - The taste hub</span>
             </div>
             <ul class="sidebar-menu">
@@ -90,7 +94,7 @@
                     <svg class="sidebar-menu__icon">
                         <use xlink:href="img/sprite.svg#icon-home"></use>
                     </svg>
-                    <a href="#" class="sidebar-menu__link">Home</a>
+                    <a href="index.html" class="sidebar-menu__link">Home</a>
                 </li>
                 <li class="sidebar-menu__item">
                     <svg class="sidebar-menu__icon">
@@ -131,7 +135,7 @@
                     <svg class="sidebar-menu__icon">
                         <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
                     </svg>
-                    <a href="#" class="sidebar-menu__link">My Cart</a>
+                    <a href="cart.html" class="sidebar-menu__link">Cart</a>
                 </li>
             </ul>
         </nav>
@@ -148,7 +152,7 @@
             <div id="payment-details-tax">
             </div>
             <div class="cart-summary__CTA">
-                <a href="/" class="btn cart-summary__CTA--back" role="button">Back</a>
+                <a href="index.html" class="btn cart-summary__CTA--back" role="button">Back</a>
                 <a href="order.html" class="btn cart-summary__CTA--next" role="button">Next</a>
             </div>
         </div>
@@ -156,7 +160,7 @@
         <div class="empty-cart">
             <img class="empty-cart__image" src="img/empty-cart.png" alt="empty-cart"/>
             <div class="empty-cart__msg">Your cart is empty</div>
-            <a href="/" class="btn" role="button">Add Food to Cart</a>
+            <a href="index.html" class="btn" role="button">Add Food to Cart</a>
         </div>
 
     </section>
