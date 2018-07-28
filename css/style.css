@@ -446,6 +446,9 @@ body {
   display: none;
   margin: 3rem;
   text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .empty-cart .btn {
+      padding: 1.5rem 4rem; } }
   .empty-cart__msg {
     margin: 2rem;
     font-size: 20px;
@@ -632,7 +635,7 @@ body {
         height: 1rem;
         width: 1rem;
         content: "\276E";
-        display: inline-block;
+        display: block;
         position: absolute;
         transform: rotate(90deg);
         top: 2.4rem;
@@ -642,7 +645,7 @@ body {
         height: 1rem;
         width: 1rem;
         content: "\276E";
-        display: inline-block;
+        display: block;
         position: absolute;
         transform: rotate(90deg);
         top: 2.4rem;
