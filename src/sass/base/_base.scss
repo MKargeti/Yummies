@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:[full-start] 3vw [center-start] 1fr [center-end] 3vw [full-end];
+    background-color: $color-white;
+}
+
+#overlay {
+   @include overlay;
+}
+
+#popup-overlay {
+    @include overlay;
+    z-index: 1000;
+    background-color: rgba(204, 206, 236, 0.5);
+
+    & img{
+        width: 55px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    }
+}
+
+.hidden-overflow{
+    overflow-y: hidden;
+}
+    
