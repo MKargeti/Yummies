@@ -106,21 +106,22 @@
                     <svg class="sidebar-menu__icon">
                         <use xlink:href="img/sprite.svg#icon-lifebuoy"></use>
                     </svg>
-                    <label class="sidebar-menu__link sidebar-menu__link--accordion-up">Services</label>
-                    <ul class="sidebar-submenu">
-                        <li class="sidebar-submenu__item">
-                            <a href="#" class="sidebar-submenu__link">- Food delivery</a>
-                        </li>
-                        <li class="sidebar-submenu__item">
-                            <a href="#" class="sidebar-submenu__link">- Pick up store</a>
-                        </li>
-                    </ul>
+                    <div class="sidebar-menu__link sidebar-menu__link--accordion-up">Services
+                        <ul class="sidebar-submenu">
+                            <li class="sidebar-submenu__item">
+                                <a href="#" class="sidebar-submenu__link">- Food delivery</a>
+                            </li>
+                            <li class="sidebar-submenu__item">
+                                <a href="#" class="sidebar-submenu__link">- Pick up store</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="sidebar-menu__item">
                     <svg class="sidebar-menu__icon">
                         <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
                     </svg>
-                    <label class="sidebar-menu__link sidebar-menu__link--accordion-up">About us</label>
+                    <div class="sidebar-menu__link sidebar-menu__link--accordion-up">About us
                         <ul class="sidebar-submenu">
                             <li class="sidebar-submenu__item">
                                 <a href="#" class="sidebar-submenu__link">- Who we are</a>
@@ -129,6 +130,7 @@
                                 <a href="#" class="sidebar-submenu__link">- History</a>
                             </li>
                         </ul>
+                    </div>
                 </li>
                 <li class="sidebar-menu__item">
                     <svg class="sidebar-menu__icon">
@@ -152,8 +154,8 @@
                 <h2 class="payment-method__label">Select a Payment Method</h2>
                 <ul class="payment-type">
                     <li class="payment-type__item">
-                        <input id="walletPayment" class="payment-type__item--radio"  aria-label="Wallet" type="radio" name="paymentType"
-                        aria-checked='true' checked="checked">
+                        <input id="walletPayment" class="payment-type__item--radio" aria-label="Wallet" type="radio" name="paymentType" aria-checked='true'
+                            checked="checked">
                         <label class="payment-type__item--text" for="walletPayment"> Wallet</label>
                         <ul class="payment-wallet">
                             <li class="payment-wallet__item pay-selected" tabindex="0">
@@ -180,8 +182,8 @@
                         </ul>
                     </li>
                     <li class="payment-type__item">
-                        <input id="cardPayment" class="payment-type__item--radio" aria-label="Credit/Debit Cards" type="radio"
-                            name="paymentType" aria-checked='false'>
+                        <input id="cardPayment" class="payment-type__item--radio" aria-label="Credit/Debit Cards" type="radio" name="paymentType"
+                            aria-checked='false'>
                         <label class="payment-type__item--text" for="cardPayment" aria-label="Pay via Card">Credit/Debit Cards</label>
 
                     </li>
@@ -249,10 +251,10 @@
                 <div id="payment-details-tax">
                 </div>
                 <div class="pay-now">
-                    <a href="cart.html" role="button" class="btn pay-now__link">Place Your Order</a>
+                    <a href="#" role="button" class="btn pay-now__link">Place Your Order</a>
                 </div>
             </div>
-
+            <div id="overlay"></div>
         </div>
     </section>
 <script type="text/javascript" src="js/bundle.js"></script></body>
