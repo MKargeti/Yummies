@@ -187,10 +187,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .carousel-caption {
       width: 45rem;
-      bottom: 15rem; }
-      .carousel-caption #carousel .carousel-indicators {
-        top: 27rem;
-        bottom: 0; } }
+      bottom: 20rem; } }
   @media only screen and (max-width: 37.5em) {
     .carousel-caption {
       width: 28rem;
