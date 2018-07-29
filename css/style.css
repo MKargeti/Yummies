@@ -73,15 +73,36 @@ body {
   cursor: pointer;
   /* Add a pointer on hover */
   z-index: 1000;
-  background-color: rgba(204, 206, 236, 0.5); }
+  background-color: rgba(173, 176, 182, 0.6); }
   #popup-overlay img {
     width: 55px;
     position: absolute;
-    top: 80%;
+    top: 50%;
     left: 50%; }
 
 .hidden-overflow {
   overflow-y: hidden; }
+
+a.skip-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999; }
+  a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color: #434948;
+    left: 0;
+    width: 20rem;
+    height: auto;
+    overflow: auto;
+    margin: 11rem 0;
+    font-size: 1.5rem;
+    z-index: 1001;
+    padding: 1rem;
+    text-align: center; }
 
 body {
   font-family: "Lato",sans-serif;
@@ -200,11 +221,23 @@ body {
     text-transform: uppercase;
     word-spacing: .3rem; }
 
+@media only screen and (max-width: 75em) {
+  #carousel {
+    height: 65rem; }
+    #carousel .carousel-inner {
+      height: 65rem; } }
+
+@media only screen and (max-width: 56.25em) {
+  #carousel {
+    height: 49rem; }
+    #carousel .carousel-inner {
+      height: 49rem; } }
+
 @media only screen and (max-width: 37.5em) {
   #carousel {
-    height: 25rem; }
+    height: 24rem; }
     #carousel .carousel-inner {
-      height: 25rem; } }
+      height: 24rem; } }
 
 .checkout-btn {
   grid-column: 1/-1;
@@ -805,7 +838,8 @@ body {
     margin-bottom: 1rem; }
     .payment-type__item--text {
       padding-left: 1rem;
-      font-size: 1.3rem; }
+      font-size: 1.3rem;
+      cursor: pointer; }
 
 .payment-wallet,
 .payment-netbanking {

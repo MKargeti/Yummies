@@ -7,8 +7,7 @@
     <meta name="description" content="Best foo delivery website in town, just order your yummy food in few clicks." />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
     <link href="css/carousel.css" rel="stylesheet" />
-    <title>Home | Tasty food service</title>
-
+    
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -17,6 +16,7 @@
 <link href="./css/style.css" rel="stylesheet"></head>
 
 <body class="container">
+    <a class="skip-main" href="#content">Skip to main content</a>
     <header class="header">
         <a href="index.html" class="header__link">
             <img src="img/logo.png" alt="Yummiz Logo" class="header__logo">
@@ -148,11 +148,11 @@
         </nav>
     </header>
 
-    <section class="payment-section">
+    <section id="content" class="payment-section">
         <div class="payment-container">
             <div class="payment-method">
                 <h2 class="payment-method__label">Select a Payment Method</h2>
-                <ul class="payment-type">
+                <ul class="payment-type" >
                     <li class="payment-type__item">
                         <input id="walletPayment" class="payment-type__item--radio" aria-label="Wallet" type="radio" name="paymentType" aria-checked='true'
                             checked="checked">
@@ -172,7 +172,7 @@
                                     <div class="payment-wallet__type--link">Link</div>
                                 </div>
                             </li>
-                            <li class="payment-wallet__item" tabindex="0">
+                            <li class="payment-wallet__item"  tabindex="0">
                                 <div class="payment-wallet__type">
                                     <img class="payment-wallet__type--icon" alt="freecharge" src="img/freecharge.png">
                                     <div class="payment-wallet__type--name" aria-label="Pay via FreeCharge">FreeCharge</div>
@@ -197,20 +197,20 @@
 
                         <label class="payment-type__item--text" for="netBanking">Netbanking</label>
                         <ul class="payment-netbanking hide">
-                            <li class="payment-netbanking__item" tabindex="0">
+                            <li class="payment-netbanking__item"  tabindex="0">
                                 <div data-bank_id="1" class="payment-netbanking__type">
                                     <img class="payment-netbanking__type--icon" alt="kotak mahindra bank" src="img/kotak.png">
                                     <div class="payment-netbanking__type--name" aria-label="Pay via Kotak">Kotak Mahindra Bank</div>
                                 </div>
                             </li>
-                            <li class="payment-netbanking__item" tabindex="0">
+                            <li class="payment-netbanking__item"  tabindex="0">
                                 <div data-bank_id="2" class="payment-netbanking__type">
                                     <img class="payment-netbanking__type--icon" alt="hdfc" src="img/hdfc.png">
                                     <div class="payment-netbanking__type--name" aria-label="Pay via HDFC">HDFC Bank</div>
                                 </div>
                             </li>
 
-                            <li class="payment-netbanking__item" tabindex="0">
+                            <li class="payment-netbanking__item"  tabindex="0">
                                 <div data-bank_id="3" class="payment-netbanking__type">
                                     <img class="payment-netbanking__type--icon" alt="icici" src="img/icici.png">
                                     <div class="payment-netbanking__type--name" aria-label="Pay via ICICI">ICICI NetBanking</div>
