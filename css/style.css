@@ -33,56 +33,6 @@ body {
   grid-template-columns: [full-start] 3vw [center-start] 1fr [center-end] 3vw [full-end];
   background-color: #fff; }
 
-#overlay {
-  position: fixed;
-  /* Sit on top of the page content */
-  display: none;
-  /* Hidden by default */
-  width: 100%;
-  /* Full width (cover the whole page) */
-  height: 100%;
-  /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Black background with opacity */
-  z-index: 2;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */ }
-
-#popup-overlay {
-  position: fixed;
-  /* Sit on top of the page content */
-  display: none;
-  /* Hidden by default */
-  width: 100%;
-  /* Full width (cover the whole page) */
-  height: 100%;
-  /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Black background with opacity */
-  z-index: 2;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */
-  z-index: 1000;
-  background-color: rgba(173, 176, 182, 0.6); }
-  #popup-overlay img {
-    width: 55px;
-    position: absolute;
-    top: 50%;
-    left: 50%; }
-
-.hidden-overflow {
-  overflow-y: hidden; }
-
 a.skip-main {
   left: -999px;
   position: absolute;
@@ -491,6 +441,56 @@ body {
     font-size: 20px;
     font-weight: 600;
     color: #606362; }
+
+#overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */ }
+
+#popup-overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  z-index: 1000;
+  background-color: rgba(173, 176, 182, 0.6); }
+  #popup-overlay img {
+    width: 55px;
+    position: absolute;
+    top: 50%;
+    left: 50%; }
+
+.hidden-overflow {
+  overflow-y: hidden; }
 
 .header {
   grid-column: full-start / full-end;
